@@ -7,7 +7,7 @@
 'Hola Mamá'.indexOf('a');
 'Hola Mamá'.lastIndexOf('a');
 'Hola Mamá'.match(/[A-Z]/g);
-'Hola Mamá'.padStart(12, 'X');
+'Hola Mamá'.padStart(12, 'X');                   
 'Hola Mamá'.padEnd(12, 'X');
 'Hola '.repeat(3);
 'Hola Mamá'.replace('a', '4');
