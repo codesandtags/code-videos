@@ -3,17 +3,16 @@
 const life = 50;
 const exp  = '50';
 
-// == compara valores iguales
-life == exp 
-
-// === compara valores iguales
-// y también el tipo de dato.
-life === exp
+// "Loose" equality operator: ==
+// Compara sólo valores
+life == exp // ?
+// "Strict" equality operator: ===
+// Compara estrictamente valores y 
+// tipos de dato
+life === exp // ?
 
 typeof life 
 typeof exp
-
-
 
 
 

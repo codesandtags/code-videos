@@ -10,19 +10,15 @@ const monster = {
 console.log(monster.name !== undefined);
 console.log(monster.life !== undefined);
 console.log(monster.hasOwnProperty('life'));
-
 console.log(monster.hasOwnProperty('fly'));
+
+// ¿Cómo verificar alguna propiedad del prototype?
 console.log(monster.hasOwnProperty('toString'));
 console.log('toString' in monster);
 
-// Pregunta superada 👏 👏 👏 🎉 🎊
 
 
 
 
 
-
-
-
-// The in operator returns true if the specified property is in the specified object or its prototype chain.
 
