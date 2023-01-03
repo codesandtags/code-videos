@@ -1,6 +1,5 @@
 // Short Circuit Evaluation
 // JavaScript reads from left to right
-
 const todayIsHoliday = true;
 
 function letsRun() {
@@ -8,7 +7,7 @@ function letsRun() {
 }
 
 // Before
-if (todayIsHoliday) {
+if (todayIsHoliday) {
   letsRun();
 }
 

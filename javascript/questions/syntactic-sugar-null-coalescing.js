@@ -1,21 +1,24 @@
-// Null Coalescing
-const value = 'Codesandtags';
-
-// Before
-let defaultValue = value != null ? value : 'Goku';
-console.log(`👋 Hello  ${defaultValue}`);
-
-// After
-defaultValue = value ?? 'Goku';
-console.log(`👋 Hello  ${defaultValue}`);
-
-
-// Optional Chaining
-const monster = {
-  name: 'Cocoman',
-  company: {
-    website: 'codesandtags.io'
-  }
+let character = '';
+let defaultCharacter = 'Goku';
+let winner;
+// ¿Cómo puedes simplificar la siguiente operación?
+if (character != null || character != undefined) {
+  winner = character;
+} else {
+  winner = defaultCharacter;
 }
+console.log(`👋 Hello 0: [${winner}]`);
 
-console.log(monster?.company?.website ?? 'monsters.io');
+// Opción 1 : Ternary Operator
+winner = character != null || character != undefined 
+  ? character 
+  : 'Goku';
+console.log(`👋 Hello 1: [${winner}]`);
+
+// Opcion 2 : OR Operator
+winner = character || defaultCharacter;
+console.log(`👋 Hello 2: [${winner}]`);
+
+// Opción 3: Nullish Coalescing Operator
+winner = character ?? 'Goku';
+console.log(`👋 Hello 3: [${winner}]`);
